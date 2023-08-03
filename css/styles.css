@@ -1,0 +1,229 @@
+body {
+    background-color:aquamarine;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size:50px;
+}
+
+h2 {
+    font-size:40px;
+}
+
+p {
+    font-size:30px;
+}
+
+#detalhes, samp, ul, table {
+    font-size:30px;
+}
+
+#animação1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: myfirst 5s 2;
+    animation-direction: alternate;
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+#background-image {
+    background-image: url("/gato2.jpg");
+    color:red;
+    inline-size: 25%;
+}
+
+#border-block-start-style {
+    background-color: yellow;
+    border-block-start-width: 10px;
+    border-block-start-style: dotted;
+}
+
+#border-image-slice {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(/gato.jpg) round;
+    border-image-slice: 10%;
+}
+
+#border-left-style {
+    border:10px solid;
+    padding:15px;
+    border-left-style:dotted;
+}
+
+#border-width {
+    border:10px solid;
+    padding:15px;
+    width:200px;
+}
+
+#column-count {
+    column-count:3;
+}
+
+#display {
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+#font-feature-values {
+    font-feature-settings: "smcp" on;
+}
+
+#font-weight {
+    font-weight:bold;
+}
+
+#grid {
+    display:grid;
+}
+
+#grid-row-start {
+    grid-row-start:2;
+}
+
+#parente {
+    position: relative;
+    height: 250px;
+    width: 60%;
+    border: solid black 1px;
+}
+
+#filho {
+    position: absolute;
+    background-color: lightblue;
+    height: 100%;
+    inset-inline: 10px 50px;
+}
+
+ul.list-style-type {
+    list-style-type:square;
+}
+
+#mask-image {
+    mask-image:radial-gradient(circle, black 75%, rgba(0, 0, 0, 0.5) 75%);
+}
+
+#min-width {
+    min-width:1000px;
+    background-color: red;
+    display:inline-block;
+}
+
+#outline-style {
+    outline-style:dotted;
+    border:1px solid red;
+}
+
+#padding-block-start {
+    padding-block-start:35px;
+    background-color:blue;
+    color:white;
+}
+
+#place-items {
+        width: 60%;
+        aspect-ratio: 3/2;
+        border: solid black 1px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center center;
+    }
+
+#place-items > div {
+    width: 60%;
+    aspect-ratio: 2;
+    background-color: coral;
+}
+
+#scroll-margin-bottom {
+    position: relative;
+    width: 80%;
+    aspect-ratio: 3/1;
+    margin: auto;
+    border: solid black 2px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.azul {
+    background-color: blue;
+    width: 80%;
+    aspect-ratio: 4/1;
+}
+
+.vermelho {
+    background-color: red;
+    width: 80%;
+    aspect-ratio: 4/1;
+}
+
+.azul, .vermelho {
+    margin: 20px;
+    scroll-snap-align: end;
+    scroll-margin-bottom: 20px;
+}
+
+#scroll-padding-left {
+    width: 80%;
+    aspect-ratio: 2/1;
+    margin: auto;
+    border: solid black 2px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
+}
+
+.azul2 {
+    background-color: blue;
+    height: 95%;
+    aspect-ratio: 3/2;
+}
+
+.vermelho2 {
+    background-color: red;
+    height: 80%;
+    aspect-ratio: 4/3;
+}
+
+.azul2, .vermelho2 {
+    display: inline-block;
+    margin: 2px;
+    scroll-snap-align: start;
+}
+
+#text-decoration-style {
+    text-decoration-style:wavy;
+    text-decoration-line: underline;
+}
+
+#transition-delay {
+    width:200px;
+    height:200px;
+    background-color:red;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-delay: 2s;
+}
+
+#transition-delay:hover {
+    width:400px;
+}
+
+#writing-mode {
+    writing-mode:vertical-lr;
+}
